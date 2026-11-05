@@ -1,0 +1,28 @@
+[
+  {
+    "id": "supported_01",
+    "type": "supported",
+    "question": "REPLACE with a factual question answered by your documents",
+    "expected_keywords": [
+      "REPLACE",
+      "KEYWORD"
+    ],
+    "notes": "Expected facts must be verified from the source document before running the test."
+  },
+  {
+    "id": "supported_paraphrase_01",
+    "type": "supported",
+    "question": "REPLACE with a paraphrase of a supported question",
+    "expected_keywords": [
+      "REPLACE"
+    ],
+    "notes": "Use this to test whether different wording still retrieves the right information."
+  },
+  {
+    "id": "unsupported_01",
+    "type": "unsupported",
+    "question": "REPLACE with a question whose answer is NOT in the documents",
+    "expected_keywords": [],
+    "notes": "The desired behavior should be conservative rather than fabricated."
+  }
+]
